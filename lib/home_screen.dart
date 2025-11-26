@@ -12,7 +12,9 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colurs.tealyellow,
-      body: Column(children: [Center(child: Text("GitHub Demo For Flutter"))]),
+      body: Column(
+        children: [Center(child: Text("GitHub actions Demo For Flutter"))],
+      ),
     );
   }
 }
