@@ -29,3 +29,34 @@ jobs:
         with:
           name: release apk
           path: build/app/outputs/flutter-apk/app-release.apk
+# name: build flutter apk
+# on:
+#   push:
+#     branches:
+#       - main
+#       - master
+#   pull_request:
+#     branches:
+#       - main
+#       - master
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: "CheckOUt Repository"
+#         uses: actions/checkout@v3
+#       - name: "set up flutter"
+#         uses: subosito/flutter-action@v2
+#         with:
+#           channel: stable
+#       - name: "installing dependencies"
+#         run: flutter pub get
+#       - name: "run flutter doctor"
+#         run: flutter doctor
+#       - name: "build apk"
+#         run: flutter build apk --release
+#       - name: "upload apk"
+#         uses: actions/upload-artifact@v4
+#         with:
+#           name: "flutter apk"
+#           path: build/app/outputs/flutter-apk/app-release.apk
