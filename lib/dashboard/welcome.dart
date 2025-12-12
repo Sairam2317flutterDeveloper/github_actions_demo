@@ -250,7 +250,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                                     ),
                                   ),
                                   Text(
-                                    'Everyday assentials',
+                                    'Everyday ',
                                     style: TextStyle(
                                       color: blackColor,
                                       fontWeight: FontWeight.w500,
